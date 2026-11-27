@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1111">
+  <meta name="description" content="Conheça o Radar Comercial: projeto independente de inteligência comercial em desenvolvimento. Explore um dashboard com dados fictícios de preços, custos e margens.">
+  <title>Radar Comercial — Enxergue a próxima oportunidade</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Radar Comercial, início"><img src="assets/favicon.svg" width="38" height="38" alt=""><span>radar<span class="brand-light">comercial</span><span class="brand-point">.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+      <nav id="navigation" aria-label="Navegação principal"><a href="#projeto">O projeto</a><a href="#dashboard">Dashboard</a><a href="#evolucao">Próximos passos</a></nav>
+      <span class="development"><span class="status-dot"></span>Em desenvolvimento</span>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero container" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="mini-line"></span> INTELIGÊNCIA PARA O SEU PRÓXIMO PASSO</div>
+        <h1 id="hero-title">Menos ruído.<br>Mais <span>oportunidades.</span></h1>
+        <p>Preços contam uma parte da história. O Radar Comercial conecta custos, estoque e tendências para revelar o potencial por trás de cada produto.</p>
+        <div class="hero-actions"><a class="button primary" href="#dashboard">Explorar demonstração</a><a class="text-link" href="#projeto">Conheça o projeto</a></div>
+        <div class="hero-note"><span class="outline-check">✓</span> Projeto independente <span class="note-divider">/</span> APIs oficiais previstas <span class="note-divider">/</span> Leitura de dados</div>
+      </div>
+      <div class="radar-art" role="img" aria-label="Ilustração de um radar detectando oportunidades comerciais fictícias">
+        <div class="radar-grid"></div><div class="radar-ring ring-one"></div><div class="radar-ring ring-two"></div><div class="radar-ring ring-three"></div><div class="radar-axis axis-x"></div><div class="radar-axis axis-y"></div><div class="radar-sweep"></div><div class="radar-center"></div>
+        <span class="radar-dot dot-one"></span><span class="radar-dot dot-two"></span><span class="radar-dot dot-three"></span>
+        <div class="signal-card"><span class="signal-icon">↗</span><div><span class="small-label">OPORTUNIDADE NO RADAR</span><strong>Potencial em cada detalhe.</strong><span class="signal-caption">Cruze dados. Amplie sua visão.</span></div></div>
+        <span class="radar-caption">VISUALIZAÇÃO CONCEITUAL · DADOS FICTÍCIOS</span>
+      </div>
+    </section>
+
+    <section class="principles container" id="projeto" aria-labelledby="project-title">
+      <div class="section-intro"><span class="eyebrow">UMA VISÃO MAIS COMPLETA</span><h2 id="project-title">Da informação à oportunidade.</h2><p>Uma ferramenta em construção para apoiar decisões comerciais com contexto, comparação e clareza.</p></div>
+      <div class="principle-grid">
+        <article><span class="feature-icon">⌁</span><h3>Conecte os pontos</h3><p>A proposta é reunir dados de preços do Mercado Livre e, futuramente, custos e estoques de fornecedores e distribuidores.</p></article>
+        <article><span class="feature-icon">▥</span><h3>Entenda a margem</h3><p>Compare preço de venda, custo e despesas estimadas para avaliar o potencial econômico de cada produto.</p></article>
+        <article><span class="feature-icon">◎</span><h3>Encontre o que importa</h3><p>Priorize oportunidades combinando margem, disponibilidade e sinais de tendência em uma visão comercial.</p></article>
+      </div>
+    </section>
+
+    <section class="demo-section" id="dashboard" aria-labelledby="demo-title">
+      <div class="container">
+        <div class="demo-heading"><div><span class="eyebrow">UM OLHAR SOBRE O FUTURO</span><h2 id="demo-title">Seu mercado, no radar.</h2></div><span class="tag">PROTÓTIPO INTERATIVO</span></div>
+        <div class="demo-notice"><span aria-hidden="true">ⓘ</span><p><strong>Ambiente demonstrativo.</strong> Todos os produtos, preços, custos, estoques e tendências abaixo são fictícios. Não há conexão com APIs reais.</p></div>
+        <noscript><p class="demo-notice">Ative o JavaScript para visualizar os indicadores e explorar o ranking fictício. A apresentação do projeto continua disponível nesta página.</p></noscript>
+        <div class="dashboard">
+          <div class="dashboard-toolbar"><div class="workspace-label"><span class="workspace-icon">▦</span><div><strong>Visão de oportunidades</strong><span>Uma perspectiva para decidir melhor</span></div></div><div class="period-controls" role="group" aria-label="Período do cenário fictício"><button type="button" data-period="7" aria-pressed="false">7 dias</button><button type="button" class="active" data-period="30" aria-pressed="true">30 dias</button></div></div>
+          <div class="metrics" id="metrics" aria-live="polite"></div>
+          <div class="analysis-grid">
+            <article class="chart-panel"><div class="panel-heading"><div><h3>Preço e custo em perspectiva</h3><p>Série fictícia independente do catálogo</p></div><div class="legend"><span><i class="legend-price"></i>Venda</span><span><i class="legend-cost"></i>Custo</span></div></div><div id="chart" class="chart"></div></article>
+            <article class="insight-panel"><span class="eyebrow">DESTAQUE DO CENÁRIO</span><div class="insight-symbol">◎</div><h3>Olhe além do<br>preço de venda.</h3><p>Um produto mais caro nem sempre oferece a melhor margem. Custos e despesas também entram na conta.</p><div class="insight-footer"><span class="status-dot"></span> Análise ilustrativa, sem recomendação</div></article>
+          </div>
+          <div class="ranking-heading"><div><h3>Oportunidades em destaque</h3><p>Explore e compare o portfólio fictício.</p></div><span class="results-count" id="results-count" aria-live="polite"></span></div>
+          <div class="filters"><label class="search-control"><span aria-hidden="true">⌕</span><span class="sr-only">Buscar produto</span><input id="search" type="search" placeholder="Buscar produto…" autocomplete="off"></label><label><span class="sr-only">Filtrar categoria</span><select id="category"><option value="all">Todas as categorias</option><option>Eletrônicos</option><option>Casa e cozinha</option><option>Acessórios</option></select></label><label><span class="sr-only">Ordenar oportunidades</span><select id="sort"><option value="margin">Maior margem</option><option value="profit">Maior lucro unitário</option><option value="stock">Maior estoque</option><option value="price">Menor preço</option></select></label></div>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Ranking de oportunidades fictícias; role horizontalmente em telas pequenas"><table><caption class="sr-only">Produtos fictícios, ordenados pelo critério selecionado. Valores monetários em reais.</caption><thead><tr><th scope="col">Produto</th><th scope="col">Venda</th><th scope="col">Custo</th><th scope="col">Despesas<sup>*</sup></th><th scope="col">Lucro/un.</th><th scope="col">Margem</th><th scope="col">Estoque</th><th scope="col">Tendência</th></tr></thead><tbody id="opportunities"></tbody></table><p id="empty-state" class="empty-state" hidden>Nenhum produto encontrado. Tente outro nome ou categoria.</p></div>
+          <div class="dashboard-footnote"><span><sup>*</sup> Despesas fictícias agregam taxas, frete e tributos estimados.</span><span>SIMULAÇÃO · SEM DADOS REAIS</span></div>
+        </div>
+        <p class="method-note">Como ler: lucro unitário = venda − custo − despesas. Margem = lucro unitário ÷ venda. Os valores ilustram o conceito e não representam lucro líquido contábil ou tarifas oficiais.</p>
+      </div>
+    </section>
+
+    <section class="roadmap container" id="evolucao" aria-labelledby="roadmap-title">
+      <div class="section-intro"><span class="eyebrow">CONSTRUÍDO PASSO A PASSO</span><h2 id="roadmap-title">Uma ideia clara. Um caminho aberto.</h2><p>A demonstração é o primeiro passo de uma plataforma que vai evoluir com responsabilidade.</p></div>
+      <div class="roadmap-grid"><article class="current"><span class="roadmap-status">AGORA · EM DESENVOLVIMENTO</span><h3>Apresentar a visão</h3><p>Identidade, proposta e protótipo visual. Preparação para solicitar a aprovação da aplicação junto ao Mercado Livre.</p></article><article><span class="roadmap-status">PRÓXIMA ETAPA</span><h3>Conectar informações</h3><p>Estruturar Angular e C# .NET e planejar a integração com APIs oficiais, inicialmente em modo somente leitura.</p></article><article><span class="roadmap-status">NO HORIZONTE</span><h3>Ampliar a inteligência</h3><p>Incorporar fornecedores e distribuidores para cruzar custos, estoque e tendências com mais contexto.</p></article></div>
+    </section>
+
+    <section class="transparency container" aria-labelledby="transparency-title"><div><span class="eyebrow">TRANSPARÊNCIA DESDE O INÍCIO</span><h2 id="transparency-title">Independente por natureza.<br>Cuidadoso com os dados.</h2></div><div class="transparency-copy"><p>O Radar Comercial é um projeto pessoal independente e <strong>não possui vínculo oficial com o Mercado Livre</strong>. A integração está planejada e depende das etapas de aprovação aplicáveis.</p><p>A aplicação inicialmente utilizará APIs em <strong>modo somente leitura</strong>, sem alterar anúncios, preços, estoques ou pedidos. Nesta demonstração, não há autenticação, coleta de dados pessoais ou acesso a contas.</p></div></section>
+  </main>
+  <footer class="container footer"><a class="brand footer-brand" href="#inicio"><img src="assets/favicon.svg" alt="" width="30" height="30"><span>radar<span class="brand-light">comercial</span><span class="brand-point">.</span></span></a><p>Uma nova perspectiva para suas decisões.</p><span>Projeto pessoal · Em desenvolvimento</span></footer>
+</body>
+</html>

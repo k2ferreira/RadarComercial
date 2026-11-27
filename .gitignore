@@ -1,0 +1,28 @@
+# Credenciais e configurações locais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+appsettings.*.local.json
+
+# JavaScript / Angular
+node_modules/
+dist/
+.angular/
+coverage/
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# Editor / sistema / temporários
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+tmp/
+.qa/
